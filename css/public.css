@@ -1,0 +1,29 @@
+body,h1,h2,h3,h4,div,header,p,img,input,ul,li{
+    margin:0;
+    padding:0;
+}
+body{
+    font:12px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", 微软雅黑, Tahoma, Arial, sans-serif;
+}
+a{
+    text-decoration:none;
+}
+img,input{
+    outline:none;
+    border:0 none;
+}
+li{
+    list-style:none;
+}h1,h2,h3,h4{
+    font-weight:normal;
+ }
+.clearfix:after{
+    content:'';
+    height:0;
+    display:block;
+    visibility: hidden;
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}

@@ -1,0 +1,419 @@
+body{
+    min-width:1200px;
+    overflow-x:hidden;
+}
+/*header部分*/
+.header{
+    height: 60px;
+    /*line-height: 60px;*/
+    background-color: #fafafa;
+    color:#292E35;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:6;
+}
+.header_logo{
+    float:left;
+    height: 40px;
+    line-height: 40px;
+    text-indent:50px;
+    background: url("../img/logo.png") no-repeat;
+    margin:10px 0 0 10px;
+}
+.header_logo_tit{
+    font-size:18px;
+    font-weight:normal;
+    color:#14191e;
+}
+.header_nav{
+    float:right;
+    margin:10px 10px 0 0;
+    color:#292E35;
+    position:relative;
+}
+.header_nav .header_nav_list{
+    padding-right:19px;
+}
+.header_nav .header_nav_list .header_nav_items{
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:14px;
+    margin:0 20px;
+    float:left;
+    cursor:pointer;
+}
+.header_nav .header_nav_list .header_nav_items:hover{
+    color:red;
+}
+.header_nav_list .current{
+    color:red;
+}
+.header_nav .follow{
+    width: 60px;
+    height: 2px;
+    background:red;
+    position:absolute;
+    bottom:-2px;
+    left:20px;
+}
+.header_nav_list .nav_items_6{
+    color:#fff;
+    padding:0 20px;
+    background-color: #000;
+    border-radius:5px;
+}
+/*第一屏*/
+.main .screen-1{
+    width: 100%;
+    height:800px;
+    text-align:center;
+    background:url("../img/bg-screen-1.png") no-repeat center bottom;
+    background-size:cover;
+    position: relative;
+    overflow:hidden;
+}
+.main .screen-1 .screen-1_wrap{
+    max-width:1200px;
+    min-width:800px;
+    margin:0 auto;
+    height: 100%;
+    text-align: center;
+    position:relative;
+}
+.screen-1_wrap .screen-1_tit{
+    position:absolute;
+    top:160px;
+    width: 100%;
+}
+.screen-1_wrap .screen-1_tit h3{
+    font-size:40px;
+    font-weight:normal;
+    color:#fff;
+}
+.screen-1_tit h3 strong{
+    font-size:42px;
+    color:#f01414;
+    font-weight:normal;
+    margin-right:12px;
+}
+.main .screen-1 .screen-1_phone{
+    width: 1375px;
+    height: 305px;
+    background:url("../img/screen-1-phone.png") no-repeat;
+    position:absolute;
+    bottom:180px;
+    left:50%;
+    margin-left:-687px;
+    z-index:3;
+}
+.main .screen-1 .screen-1_shadow{
+    width: 1233px;
+    height: 411px;
+    background:url("../img/screen-1-shadow.png") no-repeat;
+    position:absolute;
+    bottom:30px;
+    left:50%;
+    margin-left:-616px;
+    z-index:2;
+}
+/*第二屏*/
+.screen-2{
+    height: 788px;
+    background-color: #fafafa;
+    overflow:hidden;
+}
+.screen-2 .screen-2_wrap{
+    width: 1200px;
+    text-align: center;
+    margin:0 auto;
+    position:relative;
+}
+.screen-2_wrap .screen-2_tit{
+    margin-top: 80px;
+}
+.screen-2_wrap .screen-2_tit h3{
+    font-size: 42px;
+    color:#f01414;
+}
+.screen-2_wrap .screen-2_desc{
+    /*width: 520px;*/
+    font-size: 16px;
+    margin-top:36px;
+}
+
+.screen-2_wrap .screen-2_phone{
+    width: 928px;
+    height: 873px;
+    background:url("../img/bg-screen-2.png") no-repeat;
+    /*position: absolute;*/
+    /*left:222px;*/
+    /*top:37px;*/
+    margin:36px auto 0;
+    position:relative;
+}
+.screen-2_phone .phone_feature-1{
+    font-size: 24px;
+    width: 212px;
+    background:url("../img/icon-point-right.png") no-repeat right center;
+    text-align:left;
+    position:absolute;
+    top:146px;
+    left:-118px;
+}
+.screen-2_phone .phone_feature-2{
+    font-size: 24px;
+    width: 212px;
+    background:url("../img/icon-point-left.png") no-repeat left center;
+    text-align:right;
+    position:absolute;
+    top:42px;
+    right:140px;
+}
+.screen-2_phone .phone_feature-3{
+    font-size: 24px;
+    width: 212px;
+    background:url("../img/icon-point-left.png") no-repeat left center;
+    text-align:right;
+    position:absolute;
+    top:344px;
+    right:30px;
+}
+/*第三屏*/
+.screen-3{
+    height: 806px;
+    background-color: #a71417;
+}
+.screen-3 .screen-3_wrap{
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+}
+.screen-3_wrap .screen-3_tit{
+    margin-top:98px;
+}
+.screen-3_wrap .screen-3_tit h3{
+    font-size: 34px;
+    line-height: 34px;
+    color:#fff;
+}
+.screen-3_wrap .screen-3_desc{
+    font-size: 16px;
+    line-height: 22px;
+    color:#fff;
+    margin-top: 43px;
+}
+.screen-3_wrap .screen-3_phone{
+    width: 729px;
+    height: 900px;
+    background:url("../img/bg-screen-3.png") no-repeat;
+    position:absolute;
+    right:10px;
+    top:206px;
+}
+.screen-3_phone .screen-3_phone_feature{
+    width: 328px;
+    height: 288px;
+    position:absolute;
+    left:-460px;
+    top:173px;
+}
+.screen-3_phone .phone_feature-1,.screen-3_phone .phone_feature-2,.screen-3_phone .phone_feature-3,.screen-3_phone .phone_feature-4{
+    width: 138px;
+    height: 118px;
+    font-size: 14px;
+    line-height: 24px;
+    color:#fff;
+    border:1px solid #de706c;
+    border-radius: 3px;
+    text-align: center;
+    float:left;
+    margin:0 24px 24px 0;
+    box-sizing:border-box;
+}
+.screen-3_phone .phone_feature-1 span,.screen-3_phone .phone_feature-2 span,.screen-3_phone .phone_feature-3 span,.screen-3_phone .phone_feature-4 span{
+    font-size: 30px;
+    line-height: 46px;
+    margin-top: 30px;
+    display:block;
+}
+/*.screen-3_phone .phone_feature-1{*/
+    /*top:173px;*/
+    /*left:-460px;*/
+/*}*/
+/*.screen-3_phone .phone_feature-2{*/
+    /*top:173px;*/
+    /*left:-296px;*/
+/*}*/
+/*.screen-3_phone .phone_feature-3{*/
+    /*top:317px;*/
+    /*left:-460px;*/
+/*}*/
+/*.screen-3_phone .phone_feature-4{*/
+    /*top:317px;*/
+    /*left:-296px;*/
+/*}*/
+/*第四屏*/
+.screen-4{
+    height: 800px;
+    background-color: #fff;
+}
+.screen-4 .screen-4_wrap{
+    width: 1200px;
+    height: 100%;
+    text-align: center;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+}
+.screen-4_wrap .screen-4_tit{
+    margin-top:88px;
+}
+.screen-4_wrap .screen-4_tit h3{
+    font-size: 42px;
+    line-height: 42px;
+    color:#f01414;
+}
+.screen-4_wrap .screen-4_desc{
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 53px;
+}
+.screen-4_wrap .screen-4_phone{
+    width: 1240px;
+    padding-left: 22px;
+    margin-top: 113px;
+    zoom:1;
+}
+.screen-4_phone:after{
+    content:'';
+    height:0;
+    display:block;
+    visibility: hidden;
+    clear:both;
+}
+
+.screen-4_phone .screen-4_phone img{
+    width: 240px;
+    height: 270px;
+}
+.screen-4_phone .screen-4_phone-1{
+    float:left;
+    margin-right: 70px;
+}
+.screen-4_phone .phone_name{
+    font-size: 16px;
+    line-height: 16px;
+    margin:32px 0 12px;
+}
+.screen-4_phone .phone_info{
+    font-size: 12px;
+    line-height: 12px;
+    color:#93999f;
+}
+
+.screen-4_phone .screen-4_phone-2{
+    float:left;
+    margin-right: 70px;
+}
+.screen-4_phone .screen-4_phone-3{
+    float:left;
+    margin-right: 70px;
+}
+.screen-4_phone .screen-4_phone-4{
+    float:left;
+    margin-right: 70px;
+}
+/*第五屏*/
+.screen-5{
+    height: 800px;
+    background-color:#d9dde1;
+    overflow:hidden;
+    position:relative;
+}
+.screen-5 .screen-5_wrap{
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    text-align: center;
+    position:relative;
+}
+.screen-5_wrap .screen-5_tit{
+    width: 100%;
+    position:absolute;
+    top:180px;
+}
+.screen-5_wrap .screen-5_tit h3{
+    font-size: 42px;
+    color: #f01414;
+}.screen-5_wrap .screen-5_desc{
+    font-size: 16px;
+    position:absolute;
+    top:270px;
+     width: 100%;
+ }
+.screen-5 .screen-5_phone{
+    background:url(../img/bg-screen-5.png) no-repeat center bottom;
+    width: 100%;
+    height:370px;
+    position:absolute;
+    bottom:-100px;
+    background-size:cover;
+}
+/*购买页面*/
+.main .buy{
+    width: 100%;
+    height: 320px;
+    background:url(../img/bg-screen-buy.png) no-repeat center center;
+    overflow:hidden;
+}
+.main .buy .buy_btn{
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    background-color: #f01514;
+    color:#fff;
+    border:none;
+    border-radius:3px;
+    margin:120px auto 0;
+    display:block;
+}
+.footer p{
+    height: 80px;
+    line-height: 80px;
+    background-color: #07111b;
+    text-align: center;
+    color: #fff;
+}
+.sideBar{
+    width: 50px;
+    background-color: #fff;
+    padding-left:10px;
+    position:fixed;
+    bottom:120px;
+    right:0;
+    z-index:3;
+    opacity:0;
+    transition:all 1s;
+}
+.sideBar .sideBar_item{
+    width: 40px;
+    height: 45px;
+    line-height: 45px;
+    color:#93999f;
+    border-bottom:1px solid #eee;
+    display:block;
+    text-align: center;
+}
+.sideBar .active{
+    color:red;
+}
+.sideBar .sideBar_item:hover{
+    color:#f01400;
+}

@@ -1,0 +1,259 @@
+/*第一屏动画*/
+.screen-1_wrap .screen-1_tit,.main .screen-1 .screen-1_phone,.main .screen-1 .screen-1_shadow{
+    transition:all 1s;
+}
+.screen-1_wrap .screen-1_tit_animated_start,.screen-1_shadow_animated_start{
+    /*transition:all 1s;*/
+    opacity:0;
+    transform: translate(0,100%);
+}
+.screen-1_wrap .screen-1_tit_animated_done,.screen-1_shadow_animated_done{
+    opacity:1;
+    transform: translate(0,0);
+}
+.screen-1_phone_animated_start{
+    opacity:0;
+    transform: translate(0,-100%);
+}
+.screen-1_phone_animated_done{
+    opacity:1;
+    transform: translate(0,0);
+}
+/*第二屏动画*/
+.screen-2_wrap .screen-2_tit,.screen-2_wrap .screen-2_desc{
+    transition:all 1s;
+}
+/*screen-2_tit 动画*/
+.screen-2_tit_animated_start{
+    opacity:0;
+    transform:translate(0,-100%);
+}
+.screen-2_tit_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+/*screen-2_desc动画*/
+.screen-2_desc_animated_start{
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen-2_desc_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+
+/*screen-2_phone 动画*/
+.screen-2_wrap .screen-2_phone{
+    transition:all 1s .5s;
+}
+.screen-2_phone_animated_start{
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen-2_phone_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+.screen-2_phone .phone_feature::before,.screen-2_phone .phone_feature::after{
+    content:"";
+    display:block;
+    width: 20px;
+    height: 20px;
+    background-color:rgba(255,0,0,.4);
+    border-radius: 50%;
+    position:absolute;
+    top:8px;
+}
+.phone_feature-1::before,.phone_feature-1::after{
+    right:0;
+}
+.phone_feature-2::before,.phone_feature-2::after,.phone_feature-3::before,.phone_feature-3::after{
+    left:0;
+}
+.phone_feature-1::before,.phone_feature-2::before,.phone_feature-3::before{
+    animation: flashing infinite 2s ease-in-out;
+}
+.phone_feature-1::after,.phone_feature-2::after,.phone_feature-3::after{
+    animation:flashing infinite 2s ease-in-out 1s;
+}
+@keyframes flashing {
+    0%,100%{
+        -webkit-transform: scale(0);
+        -moz-transform:scale(0) ;
+        -ms-transform:scale(0) ;
+        -o-transform:scale(0) ;
+        transform:scale(0) ;
+    }
+    50%{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*第三屏动画*/
+.screen-3_wrap .screen-3_tit,.screen-3_wrap .screen-3_desc{
+    transition:all 1s;
+}
+/*screen-2_tit 动画*/
+.screen-3_tit_animated_start{
+    opacity:0;
+    transform:translate(0,-100%);
+}
+.screen-3_tit_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+/*screen-2_desc动画*/
+.screen-3_desc_animated_start{
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen-3_desc_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+
+/*screen-3_phone 动画*/
+.screen-3_wrap .screen-3_phone{
+    transition:all 1s .5s;
+}
+.screen-3_phone_animated_start{
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen-3_phone_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+
+/*phone_feature 动画*/
+.screen-3_phone .screen-3_phone_feature{
+    transition:all 1s 1s;
+}
+.screen-3_phone .screen-3_phone_feature_animated_start{
+    opacity:0;
+    transform:scale(0);
+}
+.screen-3_phone .screen-3_phone_feature_animated_done{
+    opacity:1;
+    transform:scale(1);
+}
+
+.screen-3_phone .phone_feature-1 span{
+    animation:rotate 2s ease-in-out infinite;
+}
+.screen-3_phone .phone_feature-2 span{
+    animation:rotate 2s ease-in-out .3s infinite;
+}
+.screen-3_phone .phone_feature-3 span{
+    animation:rotate 2s ease-in-out .6s infinite;
+}
+.screen-3_phone .phone_feature-4 span{
+    animation:rotate 2s ease-in-out .9s infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(4deg);
+    }
+    20% {
+        transform: rotate(-4deg);
+    }
+    30% {
+        transform: rotate(3deg);
+    }
+    40% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    60% {
+        transform: rotate(-2deg);
+    }
+    70% {
+        transform: rotate(1deg);
+    }
+    80%{
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/*第四屏动画*/
+.screen-4_tit,.screen-4_desc{
+    transition:all 1s;
+}
+.screen-4_phone-1{
+    transition:all 1s .3s;
+}
+.screen-4_phone-2{
+    transition:all 1s .6s;
+}
+.screen-4_phone-3{
+    transition:all 1s .9s;
+}
+.screen-4_phone-4{
+    transition:all 1s 1.2s;
+}
+.screen-4_tit_animated_start{
+    opacity:0;
+    transform:translate(0,-100%);
+}
+.screen-4_tit_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+.screen-4_desc_animated_start,.screen-4_phone-1_animated_start,.screen-4_phone-2_animated_start,.screen-4_phone-3_animated_start,.screen-4_phone-4_animated_start{
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen-4_desc_animated_done,.screen-4_phone-1_animated_done,.screen-4_phone-2_animated_done,.screen-4_phone-3_animated_done,.screen-4_phone-4_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+/*第五屏动画*/
+.screen-5_tit,.screen-5_desc{
+    transition:all 1s;
+}
+.screen-5_phone{
+    transition:all 1s .5s;
+}
+.screen-5_tit_animated_start{
+    opacity:0;
+    transform:translate(0,-100%);
+}
+.screen-5_tit_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+.screen-5_desc_animated_start{
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen-5_desc_animated_done{
+    opacity:1;
+    transform:translate(0,0);
+}
+.screen-5_phone_animated_start{
+    opacity:0;
+    transform:translate(0,100px) scale(1.2);
+}
+.screen-5_phone_animated_done{
+    opacity:1;
+    transform:translate(0,0) scale(1);
+}
+/*footer动画*/
+.main .buy .buy_btn{
+    transition:all .5s;
+}
+.main .buy .buy_btn:hover{
+    transform:translate(0,-5px);
+    box-shadow:0 10px 10px rgba(0,0,0,.5);
+}
